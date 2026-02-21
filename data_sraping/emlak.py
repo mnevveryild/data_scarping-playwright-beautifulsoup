@@ -107,7 +107,7 @@ def main():
             return
 
         for page_num in range(297, 750): 
-            target_url = f"https://www.hepsiemlak.com/ankara-satilik?page={page_num}"
+            target_url = f"https://www.istediginizsiteninurlsi.com"
             print(f"\n>>> Sayfa {page_num} işleniyor...")
             
             try:
@@ -126,7 +126,7 @@ def main():
                     try:
                         # Temel Link ve ID
                         link_tag = listing.select_one('a.card-link')
-                        url = "https://www.hepsiemlak.com" + link_tag['href'] if link_tag else "-"
+                        url = "https://www.example.com" + link_tag['href'] if link_tag else "-"
                         ilan_no = url.split('/')[-1] if '/' in url else "-"
                         
                         # Fiyat
